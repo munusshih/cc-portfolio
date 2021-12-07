@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2Ficons8-cursor-24.png"
+      type="image/x-icon"
+    />
+    <title>Munus Shih | Face Generator</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--   Sharing metas   -->
+    <meta property="og:title" content="Munus Shih | Face Generator">
+<meta property="og:description" content="MI personally love to draw faces, and this is my first attempt to transform my drawing into a random generator.">
+<meta property="og:image" content="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2FScreen%20Shot%202021-09-14%20at%2012.40.09%20AM.png">
+<meta property="og:url" content="https://cc-portfolio-munus.glitch.me/p2.html">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#nav").load("nav.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <div id="nav"></div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1 class="title">
+        #2 Face Generator
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe class="framer"
+          src="https://openprocessing.org/sketch/1260344/embed/"
+          width="400"
+          height="500"
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <br />
+      *hit ENTER to download your new best friend!*
+      
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        I personally love to draw faces, and this is my first attempt to
+        transform my drawing into a random generator. This piece of work is B&W
+        because I wanted the viewers to notice that squiggly, hand-drawn style
+        in my lines using random functions.
+        <br /><br />Not only generating the faces using the random function but
+        also their names are generated randomly from a list of thousand unisex
+        names on the internet. Every one of them generated from the random
+        function has a unique name and is part of the new school, thus the font
+        I used here is our customized new school font. <br /><br />They would
+        introduce themselves every time you create them.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+
+      <p>
+        <img
+          src="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2Fface.jpg?v=1631497062447"
+          alt="My design process"
+          width="100%"
+          height="auto"
+        />
+
+        I love to sketch, but I didn't spend much time on drafting this time. I
+        was trying to implement the idea of "coding as painting", and just get
+        my hands on the coding process without thinking too much. Change the
+        concept as I'm coding new things, get into 'the zone'.
+        <br /><br />
+        I first started with the face, and gradually add more features to it.
+        Before finishing the whole thing, I feel like there's something missing.
+        What else do we usually think of when we think of someone's face? What
+        is something that makes this face unique among all the faces we've seen.
+        Then, ding dong! The idea of generating their names randomly popped into
+        my head, and I soon found this library called 'p5.speech' to take my
+        idea to the next level.
+        <br /><br />
+        Not only did I successfully pulled their names from a list of a thousand
+        unisex names, but I also use p5.speech to randomly assign them their
+        speech pitch, speech rate, and greeting words.
+        <br /><br />
+        <div class="coding">
+          sayer.setLang("es-US"); 
+          <br>
+          sayer.setPitch(random(0.01, 2));
+          <br>
+          sayer.setRate(random(1.2, 1.5));
+        </div>
+      </p>
+
+      <!--       <div class="fullwidth">
+        <img
+          src="https://cdn.glitch.com/87836090-8683-448f-a8fb-3af0c0f82bac%2Fworksheets-03.png?v=1598505804708"
+        />
+      </div> -->
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        Some people would claim that drawing on paper with pen versus drawing
+        with code on screen is fundamentally the same if you excludes the
+        difference in medium. Yet I found out that the whole process of drawing,
+        the thinking behind it as well as the possibilities are nothing alike to
+        be honest. Here I quote the words professor Justin Bakse said about why
+        he loves coding, "these things are alive".
+        <br /><br />
+        I also reflect heavily through the process of image-making on what
+        xinxin said in the lecture video, "randomness is embeded in our
+        culture". The concept behind a face generator is to parametized faces,
+        extract features from them, flatten them and mapping into another face.
+        If the process of drawing faces is a humanistic approach to our ideas of
+        faces, then the process of coding one is a mechanic - even A.I. oriented
+        - process of generating.
+      </p>
+
+      <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+
+      <ul>
+        <li>
+          <a href="https://preview.p5js.org/simontiger/present/r4gW2mgIo"
+            >This</a
+          >
+          amazing bezier curve drawer, done by simontiger.
+        </li>
+        <li>
+          <a href="https://editor.p5js.org/munusshih/sketches/XOU6W-xLQ"
+            >This</a
+          >
+          complementary editor I coded to transform JSON file into p5js.
+        </li>
+        <li>
+          <a href="https://editor.p5js.org/codingtrain/sketches/L_ME8qKmQ"
+            >'Blobby'</a
+          >
+          done by codingtrain
+        </li>
+        <li>
+          <a href="https://idmnyu.github.io/p5.js-speech/">p5.speech</a> by NYU
+          IDM
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

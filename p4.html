@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2Ficons8-cursor-24.png"
+      type="image/x-icon"
+    />
+    <title>Munus Shih | Exquisite Corpse</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--   Sharing metas   -->
+    <meta property="og:title" content="Munus Shih | Face Generator" />
+    <meta
+      property="og:description"
+      content="MI personally love to draw faces, and this is my first attempt to transform my drawing into a random generator."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2FScreen%20Shot%202021-09-14%20at%2012.40.09%20AM.png"
+    />
+    <meta
+      property="og:url"
+      content="https://cc-portfolio-munus.glitch.me/p2.html"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#nav").load("nav.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <div id="nav"></div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1 class="title">
+        #4 Exquisite Corpse
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          src="https://openprocessing.org/sketch/1284056/embed/"
+          width="600"
+          height="600"
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      *move your mouse around*
+
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        My exquisite corpse is a blue monster with a thousand eyes sitting on a
+        chair. My artstyle is heavily influenced by Henri Émile Benoît Matisse
+        and his paper-cutting pieces. The eyes of the monster would follow your
+        cursor, always looking at you.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+
+      <p>
+        This work is in a collaborate with sichun zhang, Yii.
+      </p>
+      <br />
+
+      <div class="fullwidth">
+        <img
+          src="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2Fdraft-01.jpg?v=1632837881749"
+          alt="My design process"
+          width="400px"
+        />
+      </div>
+      <div class="fullwidth">
+        <img
+          src="https://images-na.ssl-images-amazon.com/images/I/61Y0jIesCzL.jpg"
+          alt="My design process"
+          width="400px"
+          height="750px"
+        />
+      </div>
+
+      <p>
+        <br />
+        We exchanged our drawing body parts. I did the head part, and got the
+        upper and lower body parts from sichun and Yii. I only wanna take some
+        elements in the painting, like the hands, the sitting and also I left
+        out the tank top part because I wanted the whole work to look cohesive.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        I wanted to draw a monster with a thousand eyes, so I utilized the
+        'function' in p5.js combined with a loop function, thus I don't have to
+        write the eye function over and over again.
+      </p>
+
+      <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Henri_Matisse"
+            >Henri Matisse</a
+          >
+          is a great artist and his style influenced this work a lot
+        </li>
+        <li>
+          <a href="https://svg2p5.com">svg2p5 converter</a>
+          this is really
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

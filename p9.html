@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2Ficons8-cursor-24.png"
+      type="image/x-icon"
+    />
+    <title>Munus Shih | Consentful Interface</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--   Sharing metas   -->
+    <meta property="og:title" content="Munus Shih | Face Generator" />
+    <meta
+      property="og:description"
+      content="I personally love to draw faces, and this is my first attempt to transform my drawing into a random generator."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2FScreen%20Shot%202021-09-14%20at%2012.40.09%20AM.png"
+    />
+    <meta
+      property="og:url"
+      content="https://cc-portfolio-munus.glitch.me/p2.html"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#nav").load("nav.html");
+      });
+    </script>
+  </head>
+  <body>
+    <!-- navigation menu -->
+    <div id="nav"></div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1 class="title">
+        #9 Consentful Interface
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          src="https://openprocessing.org/sketch/1372507/embed/"
+          width="600"
+          height="400"
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <a href="https://openprocessing.org/sketch/1372507/"
+        ><p>
+          *click me to see fullscreen*
+        </p></a
+      >
+
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        It is a consentful interface built on top of my experimental camera.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+
+      <p>
+        The idea is to use "F.R.I.E.S." model to build a consentful interface
+        for my experimental camera.
+      </p>
+      <br />
+
+      <div class="fullwidth">
+        <img
+          src="https://cdn.glitch.me/cbb6d0d6-2bbb-4a1a-aeca-3f2d3a316805%2FScreen%20Shot%202021-11-19%20at%206.40.19%20PM.png?v=1638336446863"
+        />
+      </div>
+
+      <p>
+        The three things I can think of that needs the consent is "the access to
+        camera", "the access to mouseX, mouseY" and the consent to even use this
+        sketch. I designed these three consents in different format. I will
+        elaborate how I use the FRIES model to design the interface below.
+      </p>
+      <br />
+      <h3>
+        Freely Given
+      </h3>
+
+      <br />
+      <p>
+        In order to make the user feels like they are not being forced to
+        consent but rather it's an option for them. I also design the front
+        animated page of the interface. So users who do not want their camera to
+        be accessed can also look at the animated front page without being
+        bored.
+      </p>
+      <br />
+      <h3>
+        Reversible, Enthusiastic, Informed
+      </h3>
+
+      <br />
+      <p>
+        Users can check the box themselves to consent to the access of their
+        camera or mouse data. They can always uncheck the box to reverse the
+        action when they are no longer enthusiastic.
+      </p>
+      <br />
+      <h3>
+        Specific
+      </h3>
+      <br />
+      <p>
+        The two checkbox has vey distinct instruction. Instead of saying
+        "Consent to access the mouse", I used a more specific language "Consent
+        to Access the XY Position of Mouse" to inform the user.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        I love the idea of consentful interface. I think it is very powerful and
+        is something that seperate us from "engineers" who would simply code the
+        interface out.
+        <br />
+        I definitely want to dive more into the idea of that and learn how
+        designers can build better interface using these humanistic knowledges.
+      </p>
+    </div>
+  </body>
+</html>
